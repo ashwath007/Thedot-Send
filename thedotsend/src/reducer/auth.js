@@ -1,4 +1,4 @@
-import { SET_USER, IS_AUTHTHENTICATED, IS_VERIFYED } from "../action/action.types";
+import { SET_USER, IS_AUTHENTICATED } from "../action/action.types";
 
 
 const initialState = {
@@ -18,7 +18,7 @@ export default (state = initialState, action) => {
                 user: action.payload,
                 loading: false
             }
-        case 'IS_AUTHTHENTICATED':
+        case 'IS_AUTHENTICATED':
             return {
                 ...state,
                 isAuthenticated: action.payload,
